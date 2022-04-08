@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Cera Pro";
+  font-weight: 100 600;
+  src: url("~/assets/font/CeraPro-Regular.woff") format("woff"),
+    url("~/assets/font/CeraPro-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  font-weight: 600 900;
+  src: url("~/assets/font/CeraPro-Bold.woff") format("woff"),
+    url("~/assets/font/CeraPro-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Cera Round Pro";
+  src: url("~/assets/font/CeraRoundPro-Bold.woff")
+      format("woff"),
+    url("~/assets/font/CeraRoundPro-Bold.woff2") format("woff2");
+}

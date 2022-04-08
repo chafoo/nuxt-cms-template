@@ -1,0 +1,118 @@
+{
+  "tag": "layout-section",
+  "frame": true,
+  "props": {
+    "sections": [
+      {
+        "tag": "ui-image",
+        "block": {
+          "variant": "double-third-row",
+          "verticalPosition": "center",
+          "margin": {
+            "top": 50,
+            "bottom": 50
+          }
+        },
+        "props": {
+          "src": "/images/dao.png",
+          "alt": "Dao image",
+          "srcSets": [
+            {
+              "src": "/image/dao3.jpeg",
+              "breakpoint": "md"
+            }
+          ]
+        }
+      },
+      {
+        "tag": "ui-heading",
+        "block": {
+          "variant": "half-row",
+          "verticalPosition": "center",
+          "margin": {
+            "top": 50
+          }
+        },
+        "props": {
+          "tag": "h1",
+          "bold": true,
+          "content": "Wie man eine layout-section anlegt"
+        }
+      },
+      {
+        "tag": "ui-text",
+        "block": {
+          "variant": "half-row",
+          "margin": {
+            "top": 50
+          }
+        },
+        "props": {
+          "content": "Lorem Ipsum ist einfach Blindtext der Druck- und Satzindustrie. Lorem Ipsum ist seit den 1500er Jahren der Standard-Dummy-Text der Branche, als ein unbekannter Drucker eine Reihe von Typen nahm und daraus ein Musterbuch für Typen erstellte. Sie hat nicht nur fünf Jahrhunderte, sondern auch den Sprung in den elektronischen Satz überstanden und ist im Wesentlichen unverändert geblieben. Es wurde in den 1960er Jahren mit der Veröffentlichung von Letraset-Blättern mit Passagen von Lorem Ipsum und in jüngerer Zeit mit Desktop-Publishing-Software wie Aldus PageMaker, einschließlich Versionen von Lorem Ipsum, populär."
+        }
+      },
+      {
+        "tag": "ui-button",
+        "block": {
+          "variant": "full-row",
+          "horizontalPosition": "center",
+          "margin": {
+            "top": 50,
+            "bottom": 50
+          }
+        },
+        "props": {
+          "content": "klicke für mehr"
+        }
+      },
+      {
+        "tag": "ui-text",
+        "block": {
+          "variant": "fourth-row",
+          "margin": {
+            "top": 50,
+            "bottom": 50
+          }
+        },
+        "props": {
+          "content": "Lorem Ipsum ist einfach Blindtext der Druck- und Satzindustrie. Lorem Ipsum ist seit den 1500er Jahren der Standard-Dummy-Text der Branche, als ein unbekannter Drucker eine Reihe von Typen nahm und daraus ein Musterbuch für Typen erstellte. Sie hat nicht nur fünf Jahrhunderte, sondern auch den Sprung in den elektronischen Satz überstanden und ist im Wesentlichen unverändert geblieben. Es wurde in den 1960er Jahren mit der Veröffentlichung von Letraset-Blättern mit Passagen von Lorem Ipsum und in jüngerer Zeit mit Desktop-Publishing-Software wie Aldus PageMaker, einschließlich Versionen von Lorem Ipsum, populär."        }
+      },
+      {
+        "tag": "ui-text",
+        "block": {
+          "variant": "fourth-row",
+          "margin": {
+            "top": 50,
+            "bottom": 50
+          }
+        },
+        "props": {
+          "content": "Lorem Ipsum ist einfach Blindtext der Druck- und Satzindustrie. Lorem Ipsum ist seit den 1500er Jahren der Standard-Dummy-Text der Branche, als ein unbekannter Drucker eine Reihe von Typen nahm und daraus ein Musterbuch für Typen erstellte. Sie hat nicht nur fünf Jahrhunderte, sondern auch den Sprung in den elektronischen Satz überstanden und ist im Wesentlichen unverändert geblieben. Es wurde in den 1960er Jahren mit der Veröffentlichung von Letraset-Blättern mit Passagen von Lorem Ipsum und in jüngerer Zeit mit Desktop-Publishing-Software wie Aldus PageMaker, einschließlich Versionen von Lorem Ipsum, populär."        }
+      },
+      {
+        "tag": "ui-text",
+        "block": {
+          "variant": "fourth-row",
+          "margin": {
+            "top": 50,
+            "bottom": 50
+          }
+        },
+        "props": {
+          "content": "Lorem Ipsum ist einfach Blindtext der Druck- und Satzindustrie. Lorem Ipsum ist seit den 1500er Jahren der Standard-Dummy-Text der Branche, als ein unbekannter Drucker eine Reihe von Typen nahm und daraus ein Musterbuch für Typen erstellte. Sie hat nicht nur fünf Jahrhunderte, sondern auch den Sprung in den elektronischen Satz überstanden und ist im Wesentlichen unverändert geblieben. Es wurde in den 1960er Jahren mit der Veröffentlichung von Letraset-Blättern mit Passagen von Lorem Ipsum und in jüngerer Zeit mit Desktop-Publishing-Software wie Aldus PageMaker, einschließlich Versionen von Lorem Ipsum, populär."        }
+      },
+      {
+        "tag": "ui-text",
+        "block": {
+          "variant": "fourth-row",
+          "margin": {
+            "top": 50,
+            "bottom": 50
+          }
+        },
+        "props": {
+          "content": "Lorem Ipsum ist einfach Blindtext der Druck- und Satzindustrie. Lorem Ipsum ist seit den 1500er Jahren der Standard-Dummy-Text der Branche, als ein unbekannter Drucker eine Reihe von Typen nahm und daraus ein Musterbuch für Typen erstellte. Sie hat nicht nur fünf Jahrhunderte, sondern auch den Sprung in den elektronischen Satz überstanden und ist im Wesentlichen unverändert geblieben. Es wurde in den 1960er Jahren mit der Veröffentlichung von Letraset-Blättern mit Passagen von Lorem Ipsum und in jüngerer Zeit mit Desktop-Publishing-Software wie Aldus PageMaker, einschließlich Versionen von Lorem Ipsum, populär."        }
+      }
+    ]
+  }
+}

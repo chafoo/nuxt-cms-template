@@ -1,0 +1,110 @@
+@use "sass:map";
+
+$color-themes: (
+  "default": (
+    "background-color": $colorNeutral0,
+    "color": $colorNeutral900,
+    "border-color": $colorSecondary600,
+    "fill": $colorSecondary600,
+    // exceptions
+    "fill-color-on-hover": $colorSecondary400,
+    "linear-gradient": $gradientPrimaryLeft,
+    "text-color-over-background": $colorNeutral0,
+    "text-color-over-background-on-hover": $colorSecondary200,
+    "text-color-on-hover": $colorSecondary300,
+    "boarder-color-on-hover": $colorSecondary300,
+    "background-color-on-hover": $colorSecondary300,
+  ),
+  "primary": (
+    "background-color": $colorSecondary600,
+    "color": $colorSecondary600,
+    "border-color": $colorSecondary600,
+    "fill": $colorSecondary600,
+    // exceptions
+    "fill-color-on-hover": $colorSecondary400,
+    "linear-gradient": $gradientPrimaryLeft,
+    "text-color-over-background": $colorNeutral0,
+    "text-color-over-background-on-hover": $colorSecondary200,
+    "text-color-on-hover": $colorNeutral100,
+    "boarder-color-on-hover": $colorSecondary300,
+    "background-color-on-hover": $colorSecondary300,
+  ),
+  "secondary": (
+    "background-color": $colorPrimary300,
+    "color": $colorPrimary600,
+    "border-color": $colorPrimary600,
+    "fill": $colorPrimary600,
+    // exceptions
+    "fill-color-on-hover": $colorPrimary400,
+    "linear-gradient": $gradientSecondaryLeft,
+    "text-color-over-background": $colorNeutral0,
+    "text-color-over-background-on-hover": $colorPrimary200,
+    "text-color-on-hover": $colorPrimary300,
+    "boarder-color-on-hover": $colorPrimary300,
+    "background-color-on-hover": $colorSecondary300,
+  ),
+  "positive": (
+    "background-color": $colorPositive400,
+    "color": $colorPositive600,
+    "border-color": $colorPositive600,
+    "fill": $colorPositive600,
+    // exceptions
+    "fill-color-on-hover": $colorPositive500,
+    "linear-gradient": $gradientPositiveLeft,
+    "text-color-over-background": $colorPositive300,
+    "text-color-over-background-on-hover": $colorPositive400,
+    "text-color-on-hover": $colorPositive400,
+    "boarder-color-on-hover": $colorPositive400,
+    "background-color-on-hover": $colorSecondary300,
+  ),
+  "negative": (
+    "background-color": $colorNegative300,
+    "color": $colorNegative600,
+    "border-color": $colorNegative600,
+    "fill": $colorNegative600,
+    // exceptions
+    "fill-color-on-hover": $colorNegative400,
+    "linear-gradient": $gradientNegativeLeft,
+    "text-color-over-background": $colorNegative300,
+    "text-color-over-background-on-hover": $colorNegative400,
+    "text-color-on-hover": $colorNegative400,
+    "boarder-color-on-hover": $colorNegative400,
+    "background-color-on-hover": $colorSecondary300,
+  ),
+);
+
+@function get-color($theme, $property) {
+  $theme-colors: map.get($color-themes, $theme);
+  @return map.get($theme-colors, $property)
+}
+
+@mixin setup-color-themes($property) {
+  @each $theme-name, $color-properties in $color-themes {
+    &.theme--#{$theme-name} {
+
+      @if $property == fill-color-on-hover {
+        fill: map.get($color-properties, $property);
+      }
+
+      @if $property == linear-gardient {
+        background: map.get($color-properties, $property);
+      }
+
+      @else if $property == text-color-over-background {
+        color: map.get($color-properties, $property);
+      }
+
+      @else if $property == text-color-on-hover {
+        background: map.get($color-properties, $property);
+      }
+
+      @else if $property == boarder-color-on-hover {
+        background: map.get($color-properties, $property);
+      }
+
+      @else {
+        #{$property}: map.get($color-properties, $property);
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+// Sizes should always be divisible by 4 with a natural number result
+// Some exceptions exist, but there needs to be a reason
+
+$px0: 0rem;
+$px1: 0.0625rem;
+$px2: 0.125rem;
+$px4: 0.25rem;
+$px8: 0.5rem;
+$px12: 0.75rem;
+$px16: 1rem;
+$px20: 1.25rem;
+$px24: 1.5rem;
+$px32: 2rem;
+$px36: 2.25rem;
+$px40: 2.5rem;
+$px44: 2.75rem;
+$px60: 3.75rem;
+$px64: 4rem;
+$px72: 4.5rem;
+$px80: 5rem;
+$px96: 6rem;
+$px100: 6.25rem;
+$px124: 7.75rem;
+$px144: 9rem;
+$px160: 10rem;
+$px192: 12rem;
+$px240: 15rem;
+$px256: 16rem;
+$px280: 17.5rem;
+$px300: 18.75rem;
+$px320: 20rem;
+$px336: 21rem;
+$px384: 24rem;
+$px414: 25.875rem;
+$px448: 28rem;
+$px512: 32rem;
+$px576: 36rem;
+$px650: 40.625rem;
+$px768: 48rem;
+$px1100: 68.75rem;
+$px1024: 75rem;
+$px1920: 120rem;

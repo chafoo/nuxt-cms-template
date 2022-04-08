@@ -1,0 +1,73 @@
+/*
+*  x) using the latest data about the most common screen sizes;
+*  x) emphasizing that we first develop for the mobiles; you will usually not need the mobile and small mixins;
+*  x) all ems based on 16px;
+*/
+
+@mixin media-mobile-up($max-width: null) {
+  @if $max-width {
+    @media print,
+      screen and (min-width: $breakpoint-null) and (max-width: $max-width) {
+      @content;
+    }
+  } @else {
+    @media print, screen and (min-width: $breakpoint-null) {
+      @content;
+    }
+  }
+}
+
+@mixin media-small-up($max-width: null) {
+  @if $max-width {
+    @media print,
+      screen and (min-width: $breakpoint-sm) and (max-width: $max-width) {
+      @content;
+    }
+  } @else {
+    @media print, screen and (min-width: $breakpoint-sm) {
+      @content;
+    }
+  }
+}
+
+/* Use this mixin to cater to tablet-sized devices and upward */
+@mixin media-medium-up($max-width: null) {
+  @if $max-width {
+    @media print,
+      screen and (min-width: $breakpoint-md) and (max-width: $max-width) {
+      @content;
+    }
+  } @else {
+    @media print, screen and (min-width: $breakpoint-md) {
+      @content;
+    }
+  }
+}
+
+/* Use this mixin to cater to desktop-sized devices and upward */
+@mixin media-large-up($max-width: null) {
+  @if $max-width {
+    @media print,
+      screen and (min-width: $breakpoint-lg) and (max-width: $max-width) {
+      @content;
+    }
+  } @else {
+    @media print, screen and (min-width: $breakpoint-lg) {
+      @content;
+    }
+  }
+}
+
+/* Use this mixin to cater to desktop-sized devices and upward */
+@mixin media-x-large-up($max-width: null) {
+  @if $max-width {
+    @media print,
+      screen and (min-width: $breakpoint-xl) and (max-width: $max-width) {
+      @content;
+    }
+  } @else {
+    @media print, screen and (min-width: $breakpoint-xl) {
+      @content;
+    }
+  }
+}

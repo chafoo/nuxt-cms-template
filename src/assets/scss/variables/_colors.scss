@@ -1,0 +1,66 @@
+// Primary
+$colorSecondary600: #2c3183;
+$colorSecondary500: #3c4196;
+$colorSecondary400: #6469aa;
+$colorSecondary300: #afb4d2;
+$colorSecondary200: #e1e1f0;
+
+// Secondary
+$colorPrimary600: #ff7700;
+$colorPrimary500: #ff8900;
+$colorPrimary400: #ffa236;
+$colorPrimary300: #ffdeb7;
+$colorPrimary200: #fff6ec;
+
+// Neutral
+$colorNeutral0: #ffffff;
+$colorNeutral50: #f7f7f9;
+$colorNeutral100: #efeff3;
+$colorNeutral200: #e6e7ec;
+$colorNeutral300: #d2d3dd;
+$colorNeutral400: #c5c6d3;
+$colorNeutral500: #b0b1c2;
+$colorNeutral600: #9a9cb2;
+$colorNeutral700: #7f819d;
+$colorNeutral800: #55576f;
+$colorNeutral900: #2e2f3c;
+
+// Positive
+$colorPositive300: #f2fcf8;
+$colorPositive400: #bedbd0;
+$colorPositive500: #288e7c;
+$colorPositive600: #196956;
+
+// Negative
+$colorNegative300: #fff0ed;
+$colorNegative400: #fda095;
+$colorNegative500: #fc5744;
+$colorNegative600: #f03306;
+
+// Semantic colors
+$colorText: $colorNeutral900;
+
+// gradient
+$gradientPrimaryLeft: linear-gradient(
+  90deg,
+  $colorPrimary500 0%,
+  rgba($colorPrimary500, 0) 100%
+);
+$gradientSecondaryLeft: linear-gradient(
+  90deg,
+  $colorSecondary500 0%,
+  rgba($colorSecondary500, 0) 100%
+);
+$gradientPositiveLeft: linear-gradient(
+  90deg,
+  $colorPositive500 0%,
+  rgba($colorPositive500, 0) 100%
+);
+$gradientNegativeLeft: linear-gradient(
+  90deg,
+    $colorNegative500 0%,
+  rgba($colorNegative500, 0) 100%
+);
+
+// box-shadow
+$boxShadowGrey: 0 0.25rem 0.5rem 0 rgba($colorNeutral900, 0.1);

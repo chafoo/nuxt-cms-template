@@ -1,0 +1,42 @@
+// z-index variables
+$elevation00: 0;
+$elevation04: 400;
+$elevation08: 800;
+$elevation12: 1200;
+$elevation16: 1600;
+$elevation20: 2000;
+$elevation24: 2400;
+
+$z-index: (
+  none: $elevation00,
+  floating-box: $elevation04,
+  floating-button: $elevation08,
+  sticky-elements: $elevation12,
+  dropdown-element: $elevation12,
+  pop-up: $elevation12,
+  overlay: $elevation16,
+  modal: $elevation16,
+  banner: $elevation16,
+  navigation: $elevation20,
+  blocking-overlay: $elevation24,
+);
+
+@function z-index($key) {
+  @if map-has-key($z-index, $key) {
+    @return map-get($z-index, $key);
+  }
+
+  @warn "`#{$key}` value in $z-index map doesn't exist;";
+  @return null;
+}
+
+// External plugins
+
+// freshchat button
+#fc_frame {
+  z-index: z-index(floating-button) !important;
+
+  &.fc-open {
+    z-index: z-index(modal) !important;
+  }
+}

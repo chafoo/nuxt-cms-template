@@ -1,0 +1,18 @@
+$aspectRatios: (
+  "1:1": 100%,
+  "4:3": 75%,
+  "16:9": 56.25%,
+);
+
+@mixin useAspectRatio($ratio) {
+  /* This will be deprecated once aspect-ratio is ready for production on all our supported browser/devices
+   * https://caniuse.com/?search=aspect-ratio
+   */
+  padding-top: map-get($aspectRatios, $ratio);
+  position: relative;
+
+  & img {
+    position: absolute;
+    top: 0;
+  }
+}
